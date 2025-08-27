@@ -17,5 +17,9 @@ public class HelloController {
     public String sayHelloToName(@PathVariable String name) {
         return "Hello, " + name + "!";
     }
+    @GetMapping("/confirm/{name}")
+    public String confirmHelloToName(@PathVariable String name) {
+        return "Hello, " + name + "!";
+    }
 }
 
